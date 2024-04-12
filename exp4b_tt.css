@@ -1,0 +1,106 @@
+table{
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid black;
+}
+
+th{
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ADE8F4;
+    color: #03045E;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    background-color: #CAF0F8;
+    color: #023E8A;
+    font-size: 18px;
+}
+
+td:hover{
+    visibility: hidden;
+    position: relative;
+}
+
+td:hover::after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 100%;
+    background-color: #FBB1BD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #800f2f;
+}
+
+.e112-113:hover::after{
+    content: "E112-113";
+}
+
+.c007:hover::after{
+    content: "C007";
+}
+
+.f503:hover::after{
+    content: "F503";
+}
+
+.e212-1:hover::after{
+    content: "E212-1";
+}
+
+.f504:hover::after{
+    content: "F504";
+}
+
+.e203:hover::after{
+    content: "E203";
+}
+
+.e105:hover::after{
+    content: "E105";
+}
+
+.e201:hover::after{
+    content: "E201";
+}
+
+.e104:hover::after{
+    content: "E104";
+}
+
+.f204:hover::after{
+    content: "F204";
+}
+
+.e202:hover::after{
+    content: "E202";
+}
+
+.free:hover::after{
+    content: " ";
+}
+
+.library:hover::after{
+    content: "Library";
+}
+
+body{
+    background-color: #F9E79F;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+}
